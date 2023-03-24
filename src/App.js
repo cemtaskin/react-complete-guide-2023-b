@@ -1,5 +1,6 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 import Card from "./components/UI/Card";
 
 
@@ -33,7 +34,8 @@ const App = () =>  {
 
   return (
     <div>
-      <Card className="title"><h2>Expenses</h2></Card>
+      <NewExpense />
+    
       <Expenses items={expenses}/>
       
     </div>
